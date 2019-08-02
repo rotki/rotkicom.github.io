@@ -1,0 +1,28 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+plugins: [jekyll-paginate, jekyll-gist, redcarpet, pygments.rb]
+# Permalinks
+permalink:        pretty
+
+
+# Setup
+title:            Robin's Blog
+tagline:          'the accounting bird'
+description: >- # this means to ignore newlines until "baseurl:"
+  This is the Rotkehlchen blog at which the Robin, the accounting bird is writing about finance, accounting, analytics, DeFi, cryptoeconomics and more!
+twitter_username: rotkehlchenio
+github_username:  rotkehlchenio
+
+url:              http://blog.rotkehlchen.io
+baseurl:          ""
+
+author:
+  name:           'Lefteris Karapetsas'
+  url:            https://twitter.com/lefterisjp
+
+paginate:         3
+
+
+github:
+  repo:           https://github.com/rotkehlchenio/rotkehlchen

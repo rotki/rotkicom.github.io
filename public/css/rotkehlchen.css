@@ -1,0 +1,20 @@
+.ourlogo {
+    width: 128px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Overwrite poole css lead description */
+.lead {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Overwrite hyde css h1 for the sidebar description */
+.sidebar-about h1 {
+  color: #fff;
+  margin-top: 0;
+  font-family: "Abril Fatface", serif;
+  font-size: 2rem;
+}
