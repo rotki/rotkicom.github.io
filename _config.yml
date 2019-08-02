@@ -11,11 +11,11 @@ permalink:        pretty
 title:            Robin's Blog
 tagline:          'the accounting bird'
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the Rotkehlchen blog at which the Robin, the accounting bird is writing about finance, accounting, analytics, DeFi, cryptoeconomics and more!
+  This is the Rotkehlchen blog at which Robin, the accounting bird is writing about finance, accounting, analytics, DeFi, cryptoeconomics and more!
 twitter_username: rotkehlchenio
 github_username:  rotkehlchenio
 
-url:              http://blog.rotkehlchen.io
+url:              https://blog.rotkehlchen.io
 baseurl:          ""
 
 author:
