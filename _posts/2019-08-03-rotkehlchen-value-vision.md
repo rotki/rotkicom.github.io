@@ -41,7 +41,7 @@ With a [premium](#rotkehlchen-premium) subscription it also provides very nice v
 
 Our test user sold when BTC price was high to rebalance his portfolio and bought again when it was low according to the graph.
 
-You can also customize the profit/loss calculation to adjust it to the requirements of your jurisdiction and get a very easy detailed report which can be exported in CSV and handed over to your accountant.
+You can also customize the profit/loss calculation to adjust it to the requirements of your jurisdiction and get a detailed report which can be exported in CSV and handed over to your accountant.
 
 <img class="post_image" src="{{'/public/post1/rk-screenshot-2.png' | relative_url}}" />
 
@@ -142,10 +142,11 @@ If you are using brave you can tip us with BAT both at our [website](http://rotk
 
 # Conclusion
 
-Do **not** give in to the ease of use that some centralized services offer you in exchange for all of your financial data and a steeper price tag. **Take ownership of your financial data** today by using Rotkehlchen.
+**Do not** fall for all those centralized cointracking services that devour of your financial data and also have a rather steep price tag. **Take ownership of your financial data** today by using Rotkehlchen.
 
  - Get the latest version [here](https://github.com/rotkehlchenio/rotkehlchen/releases)
- - For information on actually using Rotkehlchen please check the [documentation](https://rotkehlchen.readthedocs.io/en/latest/).
+ - For information on usage and installation check out our [documentation](https://rotkehlchen.readthedocs.io/en/latest/).
+ - Read our code on [Github](https://github.com/rotkehlchenio/rotkehlchen)
  - For updates follow us on twitter:
      - [rotkehlchen](https://twitter.com/rotkehlchenio)
      - [lefterisjp](https://twitter.com/lefterisjp)

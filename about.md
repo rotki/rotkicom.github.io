@@ -11,7 +11,7 @@ title: About
 
 This is the blog of the Rotkehlchen asset tracking, analytics and management application. You will find posts ranging from anything regarding blockchain, to traditional finance, DeFi and a lot more here.
 
-To better understand who we are and what we stand for please read our post on [Rotkehlchen's Values and Vision]({% post_url 2019-08-03-introducing-rotkehlchen %})
+To better understand who we are and what we stand for please read our post on [Rotkehlchen's Values and Vision]({% post_url 2019-08-03-rotkehlchen-value-vision %})
 
 
 ## Staying in touch
