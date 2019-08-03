@@ -14,6 +14,7 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
+    {% include toc.html html=post.content h_max=2%}
     {{ post.content }}
   </div>
   {% endfor %}
