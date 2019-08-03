@@ -1,8 +1,8 @@
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 highlighter:      rouge  # Github pages do not support pygments and only support rouge
 # highlighter:      pygments
-plugins: [jekyll-paginate, jekyll-gist, redcarpet, pygments.rb, github-pages]
+plugins: [jekyll-paginate, jekyll-gist, github-pages]
 # Permalinks
 permalink:        pretty
 
