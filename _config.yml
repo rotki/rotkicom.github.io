@@ -1,6 +1,9 @@
 # Dependencies
 markdown:         kramdown
 highlighter:      rouge  # Github pages do not support pygments and only support rouge
+syntax_highlighter_opts:
+  block:
+    line_numbers: true
 # highlighter:      pygments
 plugins: [jekyll-paginate, jekyll-gist, github-pages]
 # Permalinks
