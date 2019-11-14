@@ -4,6 +4,7 @@ title: Rotkehlchen's Values and Vision
 
 tags:
 - Rotkehlchen
+- Rotki
 ---
 
 
