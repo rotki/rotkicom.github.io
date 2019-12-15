@@ -1,9 +1,19 @@
 ---
 layout: post
 title: Dealing with ambiguity in token symbols
+description: How does Rotki decide which assets to support and how does it deal with same crypto assets? This post explains the Rotki approach to recognizing and support crypto assets.
 
 tags:
 - Rotkehlchen
+
+keywords:
+- rotki
+- ethereum
+- bitcoin
+- asset-database
+- crypto-database
+- crypto-list
+- asset-list
 ---
 
 

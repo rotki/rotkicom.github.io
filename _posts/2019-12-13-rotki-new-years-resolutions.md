@@ -1,9 +1,18 @@
 ---
 layout: post
 title: Rotki's New Year Resolutions
+description: The roadmap of the Rotki portfolio manager for the year 2020
 
 tags:
 - Rotki
+
+keywords:
+- vuejs
+- vue
+- rotki
+- ethereum
+- bitcoin
+- portfolio-tracking
 ---
 
 

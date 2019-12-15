@@ -1,9 +1,19 @@
 ---
 layout: post
 title: Why creating a new asset in an immutable ledger should not reuse an old name
+description: This post analyzes why the renaming by MakerDAO of the old DAI to SAI in the immutable Ethereum ledger is a mistake and what does Rotki do in order to support the renaming of DAI to SAI and the new Multi-collateral DAI.
 
 tags:
 - Rotki
+
+keywords:
+- dai
+- makerdao
+- rotki
+- ethereum
+- bitcoin
+- portfolio-tracking
+- asset-renaming
 ---
 
 

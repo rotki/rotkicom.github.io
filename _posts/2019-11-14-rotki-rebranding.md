@@ -1,9 +1,18 @@
 ---
 layout: post
 title: Rebranding to Rotki
+description: This post explains why Rotkehlchen has rebranded to Rotki, what was the motivation behind the renaming and what has changed.
 
 tags:
 - Rotki
+
+keywords:
+- rebranding
+- rotki
+- ethereum
+- bitcoin
+- portfolio-tracking
+- rotkehlchen
 ---
 
 

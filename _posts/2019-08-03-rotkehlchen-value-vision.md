@@ -1,10 +1,25 @@
 ---
 layout: post
 title: Rotkehlchen's Values and Vision
+description: This post explains what is the Rotki portfolio manager, what is is trying to solve, what is the value proposition compared to competitors, our vision, future plans and more.
 
 tags:
 - Rotkehlchen
 - Rotki
+
+keywords:
+- rotki
+- ethereum
+- bitcoin
+- portfolio-tracking
+- opensource
+- privacy
+- data-ownership
+- freedom
+- financial-privacy
+- accounting
+- taxes
+- tax-reporting
 ---
 
 
