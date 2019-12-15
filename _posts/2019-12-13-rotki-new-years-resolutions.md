@@ -13,6 +13,7 @@ keywords:
 - ethereum
 - bitcoin
 - portfolio-tracking
+- cryptocurrency-portfolio-tracker
 ---
 
 

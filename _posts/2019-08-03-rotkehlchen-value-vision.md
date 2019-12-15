@@ -11,6 +11,7 @@ keywords:
 - rotki
 - ethereum
 - bitcoin
+- cryptocurrency-portfolio-tracker
 - portfolio-tracking
 - opensource
 - privacy

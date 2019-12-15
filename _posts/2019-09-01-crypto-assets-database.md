@@ -10,6 +10,7 @@ keywords:
 - rotki
 - ethereum
 - bitcoin
+- cryptocurrency-portfolio-tracker
 - asset-database
 - crypto-database
 - crypto-list

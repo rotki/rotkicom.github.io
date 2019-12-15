@@ -8,6 +8,7 @@ tags:
 
 keywords:
 - rebranding
+- cryptocurrency-portfolio-tracker
 - rotki
 - ethereum
 - bitcoin
