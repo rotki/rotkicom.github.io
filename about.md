@@ -1,6 +1,22 @@
 ---
 layout: page
 title: About
+
+description: What is the Rotki blog about? Learn about it here!
+
+keywords:
+- rotki
+- ethereum
+- bitcoin
+- portfolio-tracking
+- opensource
+- privacy
+- data-ownership
+- freedom
+- financial-privacy
+- accounting
+- taxes
+- tax-reporting
 ---
 
 <p class="message">
@@ -17,6 +33,6 @@ To better understand who we are and what we stand for please read our post on [R
 ## Staying in touch
 
 - Follow us on [Twitter](https://twitter.com/rotkiapp)
-- Keep up with the code on [Github](https://github.com/rotkehlchenio/rotkehlchen)
-- Download the latest release from [here](https://github.com/rotkehlchenio/rotkehlchen/releases)
+- Keep up with the code on [Github](https://github.com/rotki/rotki)
+- Download the latest release from [here](https://github.com/rotki/rotki/releases)
 - Check out our [website](https://rotki.com)
