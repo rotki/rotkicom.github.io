@@ -32,6 +32,13 @@
     margin-right:auto;
 }
 
+.post_image_wide {
+    max-width: 150%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 .with_border {
    padding:5px;
    border:1px solid #021a40;
