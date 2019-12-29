@@ -36,3 +36,8 @@
    padding:5px;
    border:1px solid #021a40;
 }
+
+.post > p {
+  text-align: justify;
+  text-justify: inter-word;
+}
