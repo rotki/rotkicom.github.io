@@ -19,7 +19,7 @@ keywords:
 
 # Introduction
 
-What a year has this been for Rotki! With less than two days left in 2019 this post is meant to highlight the biggest things that happened in the project during the past 12 months, what we have achieved and look to what is coming in the future.
+What a year has this been for Rotki! With less than two days left in 2019 this post is meant to highlight the biggest things that happened in the project during the past 12 months, list what we have achieved and look to what is coming in the future.
 
 
 # Year In Review
@@ -36,13 +36,13 @@ Other than that development [continued](https://github.com/rotki/rotki/pulls?utf
 
 ## February
 
-Work on Rotki [continues](https://github.com/rotki/rotki/pulls?utf8=%E2%9C%93&q=is%3Apr+created%3A2019-02-01..2019-02-28). The project's source code is [ported to Windows](https://twitter.com/LefterisJP/status/1100327186660245504) and for the first time Rotki gets to run in a Windows environment.
+Work on Rotki [continued](https://github.com/rotki/rotki/pulls?utf8=%E2%9C%93&q=is%3Apr+created%3A2019-02-01..2019-02-28). The project's source code was [ported to Windows](https://twitter.com/LefterisJP/status/1100327186660245504) and for the first time Rotki gets to run in a Windows environment.
 
 <img class="post_image_not_set_size with_border" src="{{'/public/post6/rotki_windows.jpeg' | relative_url}}" />
 
 Trying to port code to Windows is not an easy thing, especially coming from a Linux background, but seeing the end result of the app running inside an all familiar looking windows themed frame is really rewarding.
 
-Apart from that a lot of work on improving the experience of the application was done such as accomodating for Token upgrades such as the [new MLN](https://github.com/rotki/rotki/pull/278) token.
+Apart from that a lot of work on improving the experience of the application was done such as accomodating for Token upgrades starting with the [new MLN](https://github.com/rotki/rotki/pull/278) token.
 
 ## March
 
@@ -53,17 +53,17 @@ Rotki participated in [ETHCC 2](https://ethcc.io/) in Paris and gave a talk on w
 The reactions from the audience and the questions we got were really encouraging. People wanted to learn more about Rotki's mission, how can they try it but most of all when would it be available in Windows and when would v1.0 be released?
 To see the full recording of the talk check [here](https://www.youtube.com/watch?v=oIT0L9GDYEg).
 
-Meanwhile development steadily [continues](https://github.com/rotki/rotki/pulls?utf8=%E2%9C%93&q=is%3Apr+created%3A2019-03-01..2019-03-31+) with sneak peeks of the [premium graphs](https://twitter.com/rotkiapp/status/1106129114388406272) and among other things a lot of [UI improvements](https://github.com/rotki/rotki/pull/305).
+Meanwhile development steadily [continued](https://github.com/rotki/rotki/pulls?utf8=%E2%9C%93&q=is%3Apr+created%3A2019-03-01..2019-03-31+) with sneak peeks of the [premium graphs](https://twitter.com/rotkiapp/status/1106129114388406272) and among other things a lot of [UI improvements](https://github.com/rotki/rotki/pull/305).
 
 ## April
 
-Development [continues](https://github.com/rotki/rotki/pulls?utf8=%E2%9C%93&q=is%3Apr+created%3A2019-04-01..2019-04-30) but rather slowly. This month is dominated by events in Lefteris' personal life as he became a father!
+Development [continued](https://github.com/rotki/rotki/pulls?utf8=%E2%9C%93&q=is%3Apr+created%3A2019-04-01..2019-04-30) in April but rather slowly. This month was dominated by events in Lefteris' personal life as he became a father!
 
 <img class="post_image_not_set_size with_border" src="{{'/public/post6/hania.jpeg' | relative_url}}" />
 
 ## May
 
-Slowly development [picks up its pace](https://github.com/rotki/rotki/pulls?utf8=%E2%9C%93&q=is%3Apr+created%3A2019-05-01..2019-05-31+) again with various bug fixes done to the app but also some features being implemented. Most notable change that got implemented in May was a complete change in the way assets are handled by Rotki. The application no longer trusts any single token/asset symbol it is given. Instead from here and on it maintains [a list of known asset symbols](https://github.com/rotki/rotki/pull/342/) along with their conversions from/to external services. Any asset not in that list is not supported by Rotki. This lets us stop the guessing games about what assets the user has and instead allows us to know all details about each token in question and how it translates in each exchange or price querying website.
+Slowly development [picked up its pace](https://github.com/rotki/rotki/pulls?utf8=%E2%9C%93&q=is%3Apr+created%3A2019-05-01..2019-05-31+) again with various bug fixes done to the app but also some features being implemented. Most notable change that got implemented in May was a complete change in the way assets are handled by Rotki. The application no longer trusted any single token/asset symbol it is given. Instead from here and on it maintains [a list of known asset symbols](https://github.com/rotki/rotki/pull/342/) along with their conversions from/to external services. Any asset not in that list is not supported by Rotki. This lets us stop the guessing games about what assets the user has and instead allows us to know all details about each token in question and how it translates in each exchange or price querying website.
 
 {% highlight json linenos %}
 "KEY": {
@@ -96,13 +96,13 @@ If you are interested to learn more about this topic it has been covered extensi
 
 ## June
 
-Development is [continuing](https://github.com/rotki/rotki/pull/371) with a steady pace towards v1.0.
+Development [continued](https://github.com/rotki/rotki/pull/371) with a steady pace towards v1.0.
 
 A lot of work is also happening outside of Github as a website is being built for Rotki which also contains a system that allows premium users to purchase and manage premium subscriptions. Also an API server is being developed for the premiums users of Rotki.
 
 <img class="post_image_wide with_border" src="{{'/public/post6/june_website_work.png' | relative_url}}" />
 
-In parallel to all that [Kelsos](https://twitter.com/kelsos86) starts the slow and painful process of [rewriting the UI code using the vue.js framework](https://github.com/rotki/rotki/pull/371)
+In parallel to all that [Kelsos](https://twitter.com/kelsos86) started the slow and painful process of [rewriting the UI code using the vue.js framework](https://github.com/rotki/rotki/pull/371)
 
 ## July
 
@@ -124,7 +124,7 @@ Finally this version had a ton of bug fixes, and new features for a full list of
 
 As if v1.0 in July was not enough, August was a **really** busy month for Rotki!
 
-As the users [started using v1.0](https://twitter.com/bitfalls/status/1157011467478155264), August started with bugfixing of various issues that were reported. Not one, but two bugfixing releases were made!
+As the users [started using v1.0](https://twitter.com/bitfalls/status/1157011467478155264), August started with bugfixing of various issues that were reported. Not one, but two bugfixing releases were made within a few days!
 
 - [v1.0.1 - Afterfeather](https://github.com/rotki/rotki/releases/tag/v1.0.1)
 
@@ -134,7 +134,7 @@ As the users [started using v1.0](https://twitter.com/bitfalls/status/1157011467
 
 <img class="post_image_not_set_size with_border" src="{{'/public/post6/release_v1_0_2.png' | relative_url}}" />
 
-In August we also got our first paying premium subscribers, something that boosted our confidence that what we are building is worth it and something that people need.
+In August we also got our first paying premium subscribers, something that boosted our confidence that what we are building is something that people need and that the problem we are solving is worth all the effort we are putting into the project.
 
 We also started getting a lot of feature requests from people in social media and Github
 
@@ -155,13 +155,13 @@ Finally at the very end of the month, a big release containing bug fixes and the
 
 <img class="post_image_not_set_size with_border" src="{{'/public/post6/release_v1_0_3.png' | relative_url}}" />
 
-It also introduced a dmg installer for OSX user, warned users when new releases are available and  added various smaller features and lots of bug fixes. Check the [changelog](https://github.com/rotki/rotki/releases/tag/v1.0.3) for more details.
+It also introduced a dmg installer for OSX users, added a popup warning users when new releases are available and added various smaller features and lots of bug fixes. Check the [changelog](https://github.com/rotki/rotki/releases/tag/v1.0.3) for more details.
 
 ## September
 
-Development [continues](https://github.com/rotki/rotki/pulls?utf8=%E2%9C%93&q=is%3Apr+created%3A2019-09-01..2019-09-30+) also in September. The biggest change implemented this month was [saving all actions inside the database](https://github.com/rotki/rotki/pull/508) so that users won't have to re-query each time they run Rotki.
+Development [continued](https://github.com/rotki/rotki/pulls?utf8=%E2%9C%93&q=is%3Apr+created%3A2019-09-01..2019-09-30+) also in September. The biggest change implemented this month was [saving all actions inside the database](https://github.com/rotki/rotki/pull/508) so that users won't have to re-query each time they run Rotki.
 
-In the meantime traction in social media is slowly [increasing](https://twitter.com/rotkiapp/status/1176579879560765440). To further improve that we are trying to [educate](https://twitter.com/LefterisJP/status/1174645492095102977) current and potential future users on why Rotki is needed by explaining the problems of centralization, lack of privacy and lack of data ownership that all other portfolio tracking and accounting solutions are facing.
+In the meantime traction in social media is slowly [increasing](https://twitter.com/rotkiapp/status/1176579879560765440). To further improve our online presence we are trying to [educate](https://twitter.com/LefterisJP/status/1174645492095102977) current and potential future users on why Rotki is needed by explaining the problems of centralization, lack of privacy and lack of data ownership that all other portfolio tracking and accounting solutions are facing.
 
 In the meantime yet another post is made in this blog, this time to explain [why Rotki maintains its own list of assets and their mappings](https://blog.rotki.com/2019/09/01/crypto-assets-database/).
 
@@ -177,11 +177,11 @@ October started by unleashing a new Rotki release!
 
 Release v1.0.4 contained multiple features and bug fixes. The most noteworthy feature of that release was the ability to [import data from cointracking.info](https://github.com/rotki/rotki/issues/498). That feature was requested by a premium subscriber and as such was prioritized. For a full list of changes take a look at the [changelog](https://github.com/rotki/rotki/releases/tag/v1.0.4).
 
-The most seminal event of October was of course our participation in Ethereum's [Devcon 5](https://devcon.org/) in Osaka Japan and the [talk](https://twitter.com/LefterisJP/status/1182203276936114176) we gave there regarding the problems of using centralized tools in order to do accounting for the world of decentralized finance. You can find a recorded video of the talk [here](https://www.youtube.com/watch?v=hEwcDjjcUhk).
+The most seminal event of October was of course our participation in Ethereum's [Devcon 5](https://devcon.org/) in Osaka, Japan and the [talk](https://twitter.com/LefterisJP/status/1182203276936114176) we gave there regarding the problems of using centralized tools in order to do accounting for the world of decentralized finance. You can find a recorded video of the talk [here](https://www.youtube.com/watch?v=hEwcDjjcUhk).
 
 <img class="post_image_not_set_size with_border" src="{{'/public/post6/devcon5_talk.jpg' | relative_url}}" />
 
-There was a lot of feedback from the talk and from our presence in the conference. The feedback and questions revolved around upcoming DeFi features but also ideas of monetization for the project. There were ample discussions about the direction Rotki is taking as an opensource application trying to monetize itself and we got many ideas on potential ways forward.
+There was a lot of feedback given to us after the talk and during our presence in the conference. The feedback and questions revolved around upcoming DeFi features but also ideas of monetization for the project. There were ample discussions about the direction Rotki is taking as an opensource application trying to monetize itself and we got many ideas on potential ways forward.
 
 Development also [continued](https://github.com/rotki/rotki/pulls?utf8=%E2%9C%93&q=is%3Apr+created%3A2019-10-01..2019-10-31+) albeit in a slower pace due to travelling to the other side of the world for the conference.
 
@@ -193,14 +193,14 @@ The most noteworthy change that occured in November was the rebranding of the pr
 
 <img class="post_image_not_set_size with_border" src="{{'/public/post6/rebranding.png' | relative_url}}" />
 
-In November we also had to face the problems introduced by the [introduction](https://blog.makerdao.com/multi-collateral-dai-is-live/) of Maker's DAO Multi-collateral DAI and the renaming of the old DAI to SAI. We developed the required [code and DB upgrades](https://github.com/rotki/rotki/pull/551) to handle it and also explained our view on why renaming an asset is misguided in [this blogpost](https://blog.rotki.com/2019/11/19/why-renaming-asset-is-misguided/).
+In November we also had to face the problems introduced by the [introduction](https://blog.makerdao.com/multi-collateral-dai-is-live/) of Maker DAO Multi-collateral DAI and the renaming of the old DAI to SAI. We developed the required [code and DB upgrades](https://github.com/rotki/rotki/pull/551) to handle it and also explained our view on why renaming an asset like that is misguided in [this blogpost](https://blog.rotki.com/2019/11/19/why-renaming-asset-is-misguided/).
 
 
 ## December
 
 This month, Rotki has been **on fire**!
 
-December started with the release of the last release for the year. Rotki [v1.0.5](https://github.com/rotki/rotki/releases/tag/v1.0.5) was released mainly containing the work done for the Maker DAO multi-collateral DAI upgrade. Some minor features and bug fixes were also included in this release. For a full list of changes check the [changelog](https://github.com/rotki/rotki/releases/tag/v1.0.5).
+December started with the publishing of the last release for the year. Rotki [v1.0.5](https://github.com/rotki/rotki/releases/tag/v1.0.5) was released mainly containing the work done for the Maker DAO multi-collateral DAI upgrade. Some minor features and bug fixes were also included in this release. For a full list of changes check the [changelog](https://github.com/rotki/rotki/releases/tag/v1.0.5).
 
 <img class="post_image_not_set_size with_border" src="{{'/public/post6/release_v1_0_5.png' | relative_url}}" />
 
@@ -208,7 +208,7 @@ After requests from our users we also created two chatrooms where users can chat
 
 But December, presumably due to the holidays, has been one of our most productive months of work.
 
-We started having two different branches in the project due to the sheer amount of changes happening. The master branch stays as the stable branch where releases come from. The development branch is where all new work is going to.
+We started having two different branches in the project due to the sheer amount of changes happening. The master branch stays as the stable branch where releases are published from. The development branch is where all new work is going to.
 
 The work that Kelsos had started in June in order to switch the entire front-end code to utilize the [Vue.js framework](https://vuejs.org/) was finally finished and got [merged](https://github.com/rotki/rotki/pull/371).
 
@@ -228,7 +228,7 @@ We would like to thank all the users who have entrusted us with their business a
 
 # Conclusion - 2020 and beyond
 
-Going into 2020, we can only be positive about the future of Rotki!
+Heading into the new decade, we can only be positive about the future of Rotki!
 
 A lot more work will be going into the project in order to fullfill all the feature requests we have been getting. Expect a lot more coming from us and for our online presence to increase and become stronger. The userbase will also steadily keep increasing, which will allow us to perfect the software and make it the best tool for everyone by taking all of your feedback into account.
 
