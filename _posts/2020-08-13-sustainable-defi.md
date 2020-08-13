@@ -31,7 +31,7 @@ This post explores what is the concept of Decentralized Finance (DeFi), what new
 
 # What is DeFi
 
-In one sentence, decentralized finance is the permisionless decentralized version of various traditional financial instruments such as exchanges, lending, borrowing, synthetic assets e.t.c. There has been a lot of innovation in the sector in the past 2 years.
+In one sentence, decentralized finance is the permissionless decentralized version of various traditional financial instruments such as exchanges, lending, borrowing, synthetic assets e.t.c. There has been a lot of innovation in the sector in the past 2 years.
 
 ## Decentralized Exchanges
 
@@ -68,7 +68,7 @@ There is the concept of a yield farmer, someone who provides liquidity or stakes
 <br />
 <br />
 
-The bad side of farming is the "DeFi chad" or "Defi Degen". The kind of meme-driven farmer who jumps from protocol to protocol without any thought on contract safety, chasing the biggest yield, dumping their tokens to the new guys and then moving on. A practise that is obviously unsustainable.
+The bad side of farming is the "DeFi chad" or "Defi Degen". The kind of meme-driven farmer who jumps from protocol to protocol without any thought on contract safety, chasing the biggest yield, dumping their tokens to the new guys and then moving on. A practice that is obviously unsustainable.
 
 ## YAM finance.
 
@@ -106,7 +106,7 @@ It was a "fair" and transparent ponzi, but a ponzi nonetheless. And with the amo
 
 ### Shilling in Twitter
 
-What I personally found **absolutely disgusting** was the incesant amount of shilling of YAM in Twitter by many people in the ethereum community whom I actually respect who were also farming it.
+What I personally found **absolutely disgusting** was the incessant amount of shilling of YAM in Twitter by many people in the ethereum community whom I actually respect who were also farming it.
 
 It's inexcusable, reckless and irresponsible. They were shilling a protocol that had not seen any production use yet, had unaudited code, no tests, no deposit limits or anything. They were doing so only to get more people into the Ponzi game to sustain their profits and dump their bags onto them.
 
@@ -146,13 +146,13 @@ It is only through responsible development and professionalism that this sector 
 
 # Closing / About the author
 
-My name is [Lefteris Karapetsas](https://twitter.com/LefterisJP). I am the founder of [Rotki](https://rotki.com/). It is a project that deals with DeFi, among other things, and believes in the dream of a sustainable permissionaless new financial system. We are a portfolio tracker and accounting tool that respect our user's privacy and we are in this game for the long run and not to scam our users for short term gain.
+My name is [Lefteris Karapetsas](https://twitter.com/LefterisJP). I am the founder of [Rotki](https://rotki.com/). It is a project that deals with DeFi, among other things, and believes in the dream of a sustainable permissionless new financial system. We are a portfolio tracker and accounting tool that respect our users' privacy and we are in this game for the long run and not to scam our users for short term gain.
 
 Here is how you can help us:
 
 - Try out Rotki's [latest release](https://github.com/rotki/rotki/releases) and use it daily.
 - [Buy](https://rotki.com/products/) a premium subscription to unlock awesome premium features and also support our development.
 - Provide us with [feedback](https://github.com/rotki/rotki/issues) in the form of bug reports and feature requests.
-- [Star](https://github.com/rotki/rotki) our Github repo and [follow](https://twitter.com/rotkiapp) us in Twitter.
+- [Star](https://github.com/rotki/rotki) our Github repo and [follow](https://twitter.com/rotkiapp) us on Twitter.
 - Chat with us and other users of Rotki in [Discord](https://discord.gg/aGCxHG7) or in [Telegram](https://t.me/rotkiportfolio).
 - Spread the word so that more people get to try and use Rotki and learn how to both manage their finances but also how to protect the privacy of their financial data.
