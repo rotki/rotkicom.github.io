@@ -21,11 +21,15 @@ keywords:
 
 # Introduction
 
-Rotki is a true startup in the true sense of the word. A side-project trying to grow and get out into the world. At the moment we are a really small team and the issues and feature requests are piling up. Since rotki is opensource we have some help from amazing community volunteers but it's time to grow the core team beyond 2 people. To do that we are looking for a backend developer to work with us and help us create opensource financial tools.
+**Updated for 2021 - We are still looking**
+
+Rotki is a true startup in the full sense of the word. A side-project trying to grow and get out into the world. At the moment we are a really small team and the issues and feature requests are piling up. Since rotki is opensource we have some help from amazing community volunteers but it's time to grow the core team beyond 2-3 people. To do that we are looking for a backend developer to work with us and help us create opensource financial tools.
 
 # Role requirements
 
-We are looking for a backend developer to help us improve Rotki. You will work mostly with the founder (Lefteris) who is presently the only other developer working in the backend. The task is to help in the development of new features, supporting more exchanges, more blockchains, more DeFi protocols and solving all issues/bugs that are coming our way.
+We are looking for a backend developer to help us improve Rotki. You will work mostly with the founder (Lefteris) who is the main developer working in the backend. The task is to help in the development of new features, supporting more exchanges, more blockchains, more DeFi protocols and solving all issues/bugs that are coming our way.
+
+This role is for an experienced developer who **can take initiative, does not need constant monitoring and can take on a lot of responsibility**. We need someone who can take ownership of a big part of rotki's backend and help us get it to the next level.
 
 Since this is a startup you will probably wear a lot of hats and may need to also help with the backend/infrastructure of our website and API.
 
@@ -33,7 +37,7 @@ Technical requirements:
 - Excellent command of python.
 - Experience in at least another programming language (Go, C/C++, Rust etc.).
 - Write tests for features you code and bugs you fix. Not strict TDD, but also not complete absence of tests.
-- Good technical understanding of Ethereum blockchain, interacting with it, querying it and knowing technical details of how it operates.
+- Very Good technical understanding of Ethereum blockchain, interacting with it, querying it and knowing technical details of how it operates.
 - [Optional] Similar knowledge of another blockchain protocol (e.g. Bitcoin).
 - [Semi-Optional] Experience in django (should be easy to learn for a python dev).
 - [Optional] Understanding of frontend tech used in rotki: Typescript + vue.js + electron.
@@ -43,10 +47,10 @@ Technical requirements:
 Non-Technical requirements:
 - Don't be an asshole.
 - Be a team player.
-- Be an independent thinker and have a proactive can-do attitude. You will be guided for most tasks and there is always going to be mentoring when required but the more you manage to fend off by yourself the smoother the whole team will work.
+- Be an independent thinker and have a proactive can-do attitude. In the start You will be guided for most tasks and there is always going to be mentoring when required but the more you manage to fend off by yourself the smoother the whole team will work. Eventually this job is a for an individual who is both willing and capable to take on a lot of responsibility and take ownership of a big part of the codebase. No hand-holding.
 - Be user-minded. The user is king. Everything we implement in Rotki, we do so that our end users are happy and have their problems solved.
 - Have excellent English speaking skills.
-- [Optional] Be located in Berlin or somewhere close. The other 2 full time members of Rotki are here and meeting face to face is valuable.
+- [Optional] Be located in Berlin or somewhere close. 2 other full time members of Rotki are here and meeting face to face is valuable.
 
 # What we can offer
 
