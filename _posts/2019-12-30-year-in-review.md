@@ -204,8 +204,6 @@ December started with the publishing of the last release for the year. Rotki [v1
 
 <img class="post_image_not_set_size with_border" src="{{'/public/post6/release_v1_0_5.png' | relative_url}}" />
 
-After requests from our users we also created two chatrooms where users can chat about Rotki. A [Telegram chat](https://t.me/rotkiportfolio) and a [discord room](https://discordapp.com/invite/aGCxHG7).
-
 But December, presumably due to the holidays, has been one of our most productive months of work.
 
 We started having two different branches in the project due to the sheer amount of changes happening. The master branch stays as the stable branch where releases are published from. The development branch is where all new work is going to.
@@ -238,5 +236,5 @@ Stay tuned for more updates and please help us in building the best transparent 
 - Provide us with [feedback](https://github.com/rotki/rotki/issues/new/choose) in the form of bug reports and feature requests.
 - [Star](https://github.com/rotki/rotki) our Github repo and [follow](https://twitter.com/rotkiapp) us in Twitter.
 - [Buy](https://rotki.com/products/) a premium subscription and/or [support us financially](https://github.com/rotki/rotki#financially).
-- Chat with us and other users of Rotki in [Telegram](https://t.me/rotkiportfolio) or in [Discord](https://discord.gg/aGCxHG7).
+- Chat with us and other users of Rotki in [Discord](https://discord.rotki.com/).
 - Spread the word so that more people get to try and use Rotki and learn how to both manage their finances but also how to protect the privacy of their financial data.

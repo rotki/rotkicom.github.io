@@ -329,4 +329,4 @@ If you want more info on Rotki:
 - Try out Rotki's [latest release](https://github.com/rotki/rotki/releases)
 - [Buy](https://rotki.com/products) premium, unlock all features and support our development.
 - [Check out](https://github.com/rotki/rotki) our Github repo and [follow](https://twitter.com/rotkiapp) us in Twitter.
-- Chat with us and other users of Rotki in [Discord](https://discord.gg/aGCxHG7) or in [Telegram](https://t.me/rotkiportfolio).
+- Chat with us and other users of Rotki in [Discord](https://discord.rotki.com/)

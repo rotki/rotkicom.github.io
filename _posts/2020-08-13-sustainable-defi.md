@@ -154,5 +154,5 @@ Here is how you can help us:
 - [Buy](https://rotki.com/products/) a premium subscription to unlock awesome premium features and also support our development.
 - Provide us with [feedback](https://github.com/rotki/rotki/issues) in the form of bug reports and feature requests.
 - [Star](https://github.com/rotki/rotki) our Github repo and [follow](https://twitter.com/rotkiapp) us on Twitter.
-- Chat with us and other users of Rotki in [Discord](https://discord.gg/aGCxHG7) or in [Telegram](https://t.me/rotkiportfolio).
+- Chat with us and other users of Rotki in [Discord](https://discord.rotki.com/)
 - Spread the word so that more people get to try and use Rotki and learn how to both manage their finances but also how to protect the privacy of their financial data.
