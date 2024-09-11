@@ -25,7 +25,8 @@ keywords:
 - crypto-portfolio-management-tool
 ---
 
-<img class="post_image_not_set_size with_border" src="{{'/public/post14/september-week-2-blog-post-cover-image.png' | relative_url}}" />
+<img class="post_image_not_set_size with_border" src="{{'/public/post14/september-week-2-blog-post-cover-image-1.png' | relative_url}}" />
+
 
 In a world where digital footprints are as valuable as gold, privacy has become a precious commodity - especially in the crypto space. Managing your crypto portfolio involves sensitive financial information, and the idea that this data could be exposed to third parties is unsettling. As cryptocurrency adoption grows, so does the need for privacy-conscious tools that protect user data.
 
