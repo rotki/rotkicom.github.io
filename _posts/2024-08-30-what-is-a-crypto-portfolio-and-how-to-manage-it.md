@@ -23,7 +23,7 @@ keywords:
 - crypto-portfolio-management-tool
 ---
 
-<img class="post_image_not_set_size with_border" src="{{'/public/post13/week-4-blog-post-cover-image-1.png' | relative_url}}" />
+<img class="post_image_not_set_size with_border" src="{{'/public/post13/week-4-blog-post-cover-image.png' | relative_url}}" />
 
 As the world of cryptocurrency continues to expand, more investors are venturing into digital assets, building what’s known as a crypto portfolio.
 
