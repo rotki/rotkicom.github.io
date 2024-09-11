@@ -49,6 +49,7 @@ In an age where data breaches and privacy invasions are increasingly common, hav
 
 
 
+
 If you want more info on rotki:
 
 - Try out rotki's [latest release](https://github.com/rotki/rotki/releases)
