@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Power of Open Source: Why rotki’s Transparency Is Essential for Trust
+title: "The Power of Open Source: Why rotki’s Transparency Is Essential for Trust"
 description: In an era where data privacy and security are at the forefront of our digital lives, transparency has become a key factor in building trust.
 
 tags:
