@@ -30,9 +30,10 @@ To keep developing at the quality and pace users expect, we’re introducing a n
 
 ## The new structure
 
-- **Free** — stays exactly as it is today. All core local functionality remains free forever.
-- **Basic** — is now priced at **€25/month (VAT included)** and replaces today’s “Premium” tier.
-- **Advanced** and **Custom** — for heavy users, businesses, and those who want to directly fund faster development or need special integrations and support.
+- **Free** - stays exactly as it is today. All core local functionality remains free forever.
+- **Basic** - is now priced at **€25/month (VAT included)** and replaces today’s “Premium” tier.
+- **Advanced** - for power users with more heavy needs. This tier raises all limits(devices, DB size etc.) and is tailored for people managing more diverse portfolios.
+- **Custom** - For businesses, family offices, high net worth individuals whose needs go beyond the advanced tier. Includes tailored limits, dedicated support, and more.
 
 All current Premium subscribers will automatically move to the **Basic** tier starting from **November 10th, 2025** and onwards.
 If you prefer not to continue, you can cancel your subscription before that date. Otherwise, no action is needed, your next billing cycle will switch to the new plan and price.
@@ -64,7 +65,7 @@ We know price increases are never pleasant, but this is what allows us to:
 
 Our commitment to **openness, privacy, and user alignment** stays absolute.
 
-If you’ve been supporting us, thank you. You are literally the reason rotki exists. If you haven’t yet, or you paused your sub, now is a good moment to rejoin and help us keep building independent software in a world moving toward the cloud.
+If you’ve been supporting us, thank you. You are literally the reason rotki exists. If you haven’t yet, or you paused your sub, now is a good moment to rejoin and help us keep building independent, self-hosted software in a world moving toward the cloud.
 
 - Try out rotki's [latest release](https://rotki.com/download)
 - [Buy](https://rotki.com/products) premium, unlock all features and support our development.
