@@ -34,7 +34,7 @@ To keep developing at the quality and pace users expect, we’re introducing a n
 - **Basic** — is now priced at **€25/month (VAT included)** and replaces today’s “Premium” tier.
 - **Advanced** and **Custom** — for heavy users, businesses, and those who want to directly fund faster development or need special integrations and support.
 
-All current Premium subscribers will automatically move to the **Basic** tier starting from around **November 10th**.
+All current Premium subscribers will automatically move to the **Basic** tier starting from **November 10th, 2025** and onwards.
 If you prefer not to continue, you can cancel your subscription before that date. Otherwise, no action is needed, your next billing cycle will switch to the new plan and price.
 
 
