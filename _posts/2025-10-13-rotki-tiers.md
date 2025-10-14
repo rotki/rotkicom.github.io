@@ -35,9 +35,9 @@ To keep developing at the quality and pace users expect, we’re introducing a n
 - **Advanced** - for power users with more heavy needs. This tier raises all limits(devices, DB size etc.) and is tailored for people managing more diverse portfolios.
 - **Custom** - For businesses, family offices, high net worth individuals whose needs go beyond the advanced tier. Includes tailored limits, dedicated support, and more.
 
-All current Premium subscribers will automatically move to the **Basic** tier starting from **November 10th, 2025** and onwards.
-If you prefer not to continue, you can cancel your subscription before that date. Otherwise, no action is needed, your next billing cycle will switch to the new plan and price.
+All current Premium subscribers will automatically move to the **Basic** tier starting from **November 10th, 2025** and onwards. As part of this update, we’re also simplifying subscription periods. All existing plans that renew every 3 or 6 months **will automatically switch to monthly billing at the Basic tier price** (€25/month, VAT included) starting November 10th, 2025.
 
+If you prefer not to continue, you can cancel your subscription before that date. Otherwise, no action is needed, your next billing cycle will switch to the new plan and price.
 
 ## Why we made this change
 
