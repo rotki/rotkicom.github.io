@@ -14,6 +14,8 @@ keywords:
 - local first
 ---
 
+> Update: This post was updated after initial publishing to mention our 7-day cooldown period before updating dependencies.
+
 rotki is a local app that helps you to keep track of your crypto activity both as transactions on different chains and on CEXes like Coinbase, Kraken, Binance, etc. This information is quite sensitive and there are [reasons to not leak it](https://github.com/jlopp/physical-bitcoin-attacks/blob/master/README.md). It is **critical** for us that what reaches your computer is exactly what we built. Anything less puts our users at risk.
 
 For this reason, after the recent attacks [^1] [^2] [^3], we reviewed our dependency supply chain and the measures we've had in place since day one. rotki has many moving parts and its architecture spans different stacks and layers: package managers, CI, packaging pipelines, distribution. All of them need to be secure.
@@ -106,7 +108,7 @@ So we do not add dependencies casually. Before adopting a new package we look at
 - Is the package doing something simple enough that we should implement it ourselves?
 - Is vendoring a small piece of code safer than depending on the whole package?
 
-When a dependency is accepted, it is always added with locked versions. We have to be honest about the fact that maintainers are themselves attack targets and that dependency graphs grow fast.
+When a dependency is accepted, it is always added with locked versions. As an extra precaution, we also apply a 7-day cooldown period before updating dependencies to newly released versions, giving the ecosystem time to detect and report suspicious releases. We have to be honest about the fact that maintainers are themselves attack targets and that dependency graphs grow fast.
 
 ## Closing thoughts
 
