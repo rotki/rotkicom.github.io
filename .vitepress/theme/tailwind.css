@@ -1,0 +1,671 @@
+@import 'tailwindcss';
+
+/* Inter is self-hosted via @fontsource-variable/inter (imported in theme/index.ts)
+   — no external Google Fonts request, in line with rotki's privacy stance. */
+
+/* Robin's Blog identity — ported from the Hyde/Poole + rotkehlchen theme.
+   `theme-base-0f` (indigo #4f5ba5) was the active sidebar/link colour. */
+@theme {
+  --font-sans: 'Inter Variable', Inter, sans-serif;
+  --color-brand: #4f5ba5;
+  --color-brand-dark: #202020;
+}
+
+:root {
+  --blog-brand: #4f5ba5;
+  --blog-sidebar-bg: #4f5ba5;
+  --blog-sidebar-fg: #ffffff;
+  --blog-sidebar-muted: rgba(255, 255, 255, 0.8); /* AA contrast on the indigo sidebar */
+
+  --blog-bg: #ffffff;
+  --blog-fg: #515151;
+  --blog-heading: #313131;
+  --blog-link: #4f5ba5;
+  --blog-muted: #6b6b6b; /* AA (4.5:1) on white */
+  --blog-code-fg: #a82c47; /* darkened from #bf616a to meet AA on the code bg */
+  --blog-code-bg: #f9f9f9;
+  --blog-border: #e5e5e5;
+  --blog-rule: #eee;
+  --blog-img-border: #021a40;
+  --blog-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+}
+
+html.dark {
+  /* Catppuccin Frappé-aligned (cohesive with the Frappé code blocks). */
+  --blog-sidebar-bg: #232946;
+  --blog-bg: #232634; /* frappé crust — softer than near-black */
+  --blog-fg: #c6d0f5; /* frappé text */
+  --blog-heading: #e6e9f4;
+  --blog-link: #8caaee; /* frappé blue */
+  --blog-muted: #a3abc4; /* lifted for AA on the dark canvas */
+  --blog-code-fg: #ea999c; /* frappé maroon */
+  --blog-code-bg: #292c3c; /* frappé mantle */
+  --blog-border: #414559; /* frappé surface1 */
+  --blog-rule: #414559;
+  --blog-img-border: #51576d; /* frappé surface2 */
+}
+
+html {
+  font-family: 'Inter Variable', Inter, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  margin: 0;
+  color: var(--blog-fg);
+  background-color: var(--blog-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Always fill the viewport so short pages don't leave a gap below the content.
+   `dvh` tracks the real (address-bar-aware) viewport height on mobile.
+   (Plain min-height — no flex — so .blog-content keeps its max-width/auto-margins.) */
+.blog-root {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Smooth the light/dark toggle instead of a hard flash. */
+body,
+.blog-sidebar,
+.blog-content [class*='language-'] {
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+::selection {
+  background: rgba(79, 91, 165, 0.25); /* brand indigo tint */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ---- Sidebar (fixed left on >= 48em, banner on mobile) ---- */
+.blog-sidebar {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--blog-sidebar-muted);
+  background-color: var(--blog-sidebar-bg);
+}
+.blog-sidebar a {
+  color: var(--blog-sidebar-fg);
+}
+.blog-sidebar a:hover,
+.blog-sidebar a:focus {
+  text-decoration: underline;
+}
+@media (min-width: 48em) {
+  .blog-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18rem;
+    text-align: left;
+  }
+}
+
+.blog-sidebar .ourlogo {
+  width: 128px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+.blog-sidebar-title {
+  color: #fff;
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.blog-sidebar-title a {
+  color: #fff;
+}
+.blog-lead {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.blog-nav {
+  margin: 1rem 0;
+}
+.blog-nav-item {
+  display: block;
+  line-height: 1.75;
+}
+.blog-nav-item.active {
+  font-weight: bold;
+}
+.blog-copyright {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 48em) {
+  .blog-sidebar-sticky {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+  }
+}
+
+/* Hamburger toggle: desktop shows the full sidebar, so it's hidden there. */
+.blog-nav-toggle {
+  display: none;
+}
+
+/* Mobile: slim header (small logo + title + ☰), nav collapsed until tapped. */
+@media (max-width: 47.98em) {
+  .blog-sidebar {
+    position: relative;
+    padding: 0.6rem 1rem;
+    text-align: left;
+  }
+  .blog-sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .blog-sidebar-header .ourlogo {
+    width: 40px;
+    margin: 0;
+  }
+  .blog-sidebar-header .blog-sidebar-title {
+    flex: 1;
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  .blog-nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex: none;
+    background: transparent;
+    border: 0;
+    color: var(--blog-sidebar-fg);
+    line-height: 1;
+    cursor: pointer;
+  }
+  /* Open menu overlays the content (drops down from the header) instead of
+     pushing the page down. */
+  .blog-sidebar-collapse {
+    display: none;
+  }
+  .blog-sidebar-collapse.is-open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background: var(--blog-sidebar-bg);
+    padding: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.28);
+  }
+  .blog-sidebar-collapse .blog-copyright {
+    margin-top: 1rem;
+  }
+}
+
+/* Dark-mode toggle — a subtle text link matching the flat sidebar (no box). */
+.blog-appearance {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  color: var(--blog-sidebar-muted);
+  font: inherit;
+  font-size: 0.8rem;
+  line-height: 1.75;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.blog-appearance:hover,
+.blog-appearance:focus-visible {
+  color: var(--blog-sidebar-fg);
+  text-decoration: underline;
+}
+/* SSR-stable label: render both, switch with the .dark class (set before
+   hydration) instead of a JS-reactive ternary, to avoid a hydration mismatch. */
+.appearance-dark {
+  display: none;
+}
+html.dark .appearance-light {
+  display: none;
+}
+html.dark .appearance-dark {
+  display: inline;
+}
+
+/* ---- Content column ---- */
+.blog-content {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 48em) {
+  /* Span the area beside the fixed 18rem sidebar and center the reading column
+     inside it, so wide screens don't dump all the whitespace on the right. */
+  .blog-content {
+    margin-left: 18rem;
+    margin-right: 0;
+    max-width: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .blog-content > * {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ---- Posts & pages typography (ported from poole.css) ---- */
+.post,
+.page {
+  margin-bottom: 4em;
+}
+.post-title,
+.page-title {
+  margin-top: 0;
+  color: var(--blog-heading);
+}
+.post-title a {
+  color: var(--blog-heading);
+}
+.post-date {
+  display: block;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  color: var(--blog-muted);
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  line-height: 1.25;
+  color: var(--blog-heading);
+  text-rendering: optimizeLegibility;
+}
+.blog-content h1 { font-size: 2rem; }
+.blog-content h2 { margin-top: 1rem; font-size: 1.5rem; }
+.blog-content h3 { margin-top: 1.5rem; font-size: 1.25rem; }
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 { margin-top: 1rem; font-size: 1rem; }
+
+/* Subtle typographic polish (Inter): tighten large headings a touch and
+   balance their wrapping so titles don't leave a single orphan word. */
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.post-title,
+.page-title {
+  letter-spacing: -0.012em;
+  text-wrap: balance;
+}
+/* Anchor jumps (TOC / footnotes) land with a little breathing room. */
+.blog-content :is(h1, h2, h3, h4, h5, h6),
+.blog-content .footnote-item {
+  scroll-margin-top: 1.5rem;
+}
+
+.blog-content p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+/* Comfortable long-form rhythm: left-aligned (cleaner on web than justified)
+   with a more open line-height for the article body. */
+.post-content,
+.page {
+  line-height: 1.7;
+}
+.blog-content a {
+  color: var(--blog-link);
+  text-decoration: none;
+}
+.blog-content a:hover,
+.blog-content a:focus {
+  text-decoration: underline;
+}
+/* A11y: in-prose links must be distinguishable by more than colour, so
+   underline body links (not the heading permalink anchors). */
+.post-content a:not(.header-anchor),
+.page a:not(.header-anchor) {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.blog-content ul,
+.blog-content ol,
+.blog-content dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+/* Tailwind's preflight resets list markers to none — restore them for prose
+   (post bullet/numbered lists and the footnote list). Use the longhand:
+   lightningcss strips `list-style: disc` as a redundant initial value. */
+.blog-content ul {
+  list-style-type: disc;
+}
+.blog-content ol {
+  list-style-type: decimal;
+}
+.blog-content hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid var(--blog-rule);
+}
+.blog-content blockquote {
+  padding: 0.5rem 1rem;
+  margin: 0.8rem 0;
+  color: var(--blog-muted);
+  border-left: 0.25rem solid var(--blog-border);
+}
+@media (min-width: 30em) {
+  .blog-content blockquote {
+    padding-right: 5rem;
+    padding-left: 1.25rem;
+  }
+}
+
+/* Images */
+.blog-content img {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  border-radius: 5px;
+}
+.post_image {
+  height: 480px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.post_image_not_set_size {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.post_image_wide {
+  max-width: 150%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.with_border {
+  padding: 5px;
+  border: 1px solid var(--blog-img-border);
+}
+
+/* Inline code (Shiki handles fenced blocks) */
+.blog-content :not(pre) > code {
+  padding: 0.25em 0.5em;
+  font-family: var(--blog-mono);
+  font-size: 85%;
+  color: var(--blog-code-fg);
+  background-color: var(--blog-code-bg);
+  border-radius: 3px;
+}
+
+/* ---- Fenced code blocks (Shiki, github-light/github-dark) ----
+   A custom theme ships no code-block CSS, so style the Shiki output here.
+   github-light's background is white like the page, so use a distinct surface
+   for the container in both modes. */
+.blog-content [class*='language-'] {
+  position: relative;
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: var(--blog-mono);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  /* github-light's tokens are AA on white but not on an off-white tint, so keep
+     the surface white and separate the block with a border instead. */
+  background-color: #ffffff;
+  border: 1px solid var(--blog-border);
+}
+html.dark .blog-content [class*='language-'] {
+  background-color: var(--shiki-dark-bg, #0d1117);
+}
+.blog-content [class*='language-'] pre {
+  margin: 0;
+  padding: 1rem 0;
+  background: transparent;
+  overflow-x: auto;
+}
+.blog-content [class*='language-'] code {
+  display: block;
+  width: fit-content;
+  min-width: 100%;
+  padding: 0 1.25rem;
+  background: transparent;
+  color: var(--shiki-light);
+  font-size: inherit;
+}
+html.dark .blog-content [class*='language-'] code {
+  color: var(--shiki-dark);
+}
+.blog-content .shiki span {
+  color: var(--shiki-light);
+}
+html.dark .blog-content .shiki span {
+  color: var(--shiki-dark);
+}
+.blog-content [class*='language-'] .line {
+  display: inline-block;
+  min-height: 1em;
+}
+
+/* Line numbers gutter */
+.blog-content [class*='language-'].line-numbers-mode {
+  padding-left: 2rem;
+}
+.blog-content .line-numbers-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2rem;
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--blog-muted);
+  border-right: 1px solid var(--blog-border);
+}
+
+/* Hide the unstyled copy button + lang label — original code blocks were plain. */
+.blog-content [class*='language-'] > .copy,
+.blog-content [class*='language-'] > .lang {
+  display: none;
+}
+
+/* Footnotes (markdown-it-footnote) */
+.blog-content .footnotes {
+  font-size: 0.85em;
+  color: var(--blog-muted);
+}
+.blog-content .footnotes-sep {
+  margin-top: 2rem;
+}
+.blog-content .footnote-backref {
+  text-decoration: none;
+  /* Larger tap target (WCAG 2.5.8). */
+  display: inline-block;
+  min-width: 24px;
+  min-height: 24px;
+  text-align: center;
+}
+
+/* Tables */
+.blog-content table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid var(--blog-border);
+  border-collapse: collapse;
+}
+.blog-content td,
+.blog-content th {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--blog-border);
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: var(--blog-fg);
+  background-color: var(--blog-code-bg);
+}
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* ---- Inline per-post table of contents (h2 only) ---- */
+.post-toc {
+  margin-bottom: 1rem;
+}
+.post-toc ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+/* ---- Pagination (ported from poole.css) ---- */
+.pagination {
+  overflow: hidden;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  color: #ccc;
+  text-align: center;
+}
+.pagination-item {
+  display: block;
+  padding: 1rem;
+  border: 1px solid var(--blog-rule);
+  color: var(--blog-muted);
+}
+a.pagination-item:hover {
+  background-color: var(--blog-code-bg);
+}
+@media (min-width: 30em) {
+  .pagination {
+    margin: 3rem 0;
+  }
+  .pagination-item {
+    float: left;
+    width: 50%;
+  }
+  .pagination-item:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  .pagination-item:last-child {
+    margin-left: -1px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+/* ---- Tags ---- */
+/* `.blog-content` scope beats the global `.blog-content ul { list-style: disc }`
+   rule, which otherwise leaks misaligned bullets onto the flex-row pills. */
+.blog-content .post-tags {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.post-tag {
+  font-size: 0.7rem;
+  line-height: 1;
+  padding: 0.3rem 0.55rem;
+  border-radius: 999px;
+  color: var(--blog-link);
+  background: color-mix(in srgb, var(--blog-link) 12%, transparent);
+}
+
+/* ---- Prev / next post navigation ---- */
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--blog-rule);
+}
+.post-nav-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  max-width: 48%;
+}
+.post-nav-older {
+  margin-left: auto;
+  text-align: right;
+}
+.post-nav-dir {
+  font-size: 0.75rem;
+  color: var(--blog-muted);
+}
+.post-nav-title {
+  font-weight: 700;
+}
+
+/* ---- Related posts ---- */
+.related-posts {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--blog-rule);
+}
+.related-posts h2 {
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+.related-posts ul {
+  list-style: none;
+  padding-left: 0;
+}
+.related-posts li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.35rem;
+}
+.related-date {
+  color: var(--blog-muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+/* Archive list */
+.archive-post-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+.archive-post-list h1 {
+  font-size: 1.5rem;
+}
