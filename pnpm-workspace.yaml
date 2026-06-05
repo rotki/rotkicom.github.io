@@ -1,0 +1,13 @@
+# Supply-chain hardening — mirrors the rotki ui-library workspace conventions.
+# See blog post: /2026/05/22/rotki-security/
+blockExoticSubdeps: true   # reject git/file/link/tarball deps anywhere in the tree
+minimumReleaseAge: 10080   # 7-day cooldown: never install a version younger than this (minutes)
+saveExact: true            # pin exact versions, no semver ranges
+shamefullyHoist: true
+shellEmulator: true
+strictDepBuilds: true      # fail install if a dependency wants to run an un-approved build script
+trustPolicy: no-downgrade  # never silently downgrade a resolved dependency
+
+# Only these packages are permitted to run install/build lifecycle scripts.
+allowBuilds:
+  esbuild: true

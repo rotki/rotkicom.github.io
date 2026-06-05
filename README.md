@@ -1,58 +1,65 @@
 # Robin the Accounting Bird
 
-This is the source of the rotki's blog. It's loosely based on the [Hyde theme](https://github.com/poole/hyde).
+Source of the rotki blog ("Robin's Blog"), served at **blog.rotki.com**.
 
+Built with [VitePress 2](https://vitepress.dev) + a small custom theme on
+[Tailwind CSS v4](https://tailwindcss.com). It replaces the previous Jekyll
+(Hyde/Poole) site while preserving every URL, the `/atom.xml` feed and the
+overall layout.
 
-## Setting up the preview environment
+## Requirements
 
-If you have never previewed the blog locally, you might need to install some dependencies.
+- Node `>=24 <25` (see `.nvmrc`)
+- pnpm `>=11 <12` (pinned via `packageManager`)
 
-### Setting Ruby Version Manager
-First, you might need to install [RVM](https://rvm.io/rvm/install).
+Dependencies are installed under hardened pnpm settings (`pnpm-workspace.yaml`):
+a 7-day release cooldown (`minimumReleaseAge`), exact pins (`saveExact`),
+strict dependency build allow-listing, `no-downgrade` trust policy and exotic
+sub-dependency blocking — matching the rotki ui-library conventions.
 
-After following the instructions above, you should be able to call `rvm` from your terminal.
-
-### Installing the latest Ruby version
-Next you need to install the latest version of Ruby. This can be done by running the following command.
-
-```bash
-rvm install ruby --latest
-```
-
-After the command completes, set the default version running the following: 
-```bash
-rvm use ruby --default
-```
-
-And finally verify that running the version command returns the same version that was just installed.
-```bash
-ruby -v
-```
-
-### Finally 
-It's now time to install the dependencies required to run the preview environment.
-To do so run:
+## Develop
 
 ```bash
-bundle install
+pnpm install
+pnpm dev           # local preview at http://localhost:5173
 ```
 
-After the successful installation of dependencies the only thing remaining is running the command to preview your changes.
-
-## Previewing changes
-
-You can preview an pending changes to the blog locally by running the following command: 
+## Build
 
 ```bash
-bundle exec jekyll serve
+pnpm build       # output in .vitepress/dist
+pnpm preview   # serve the production build locally
 ```
 
-You should see something like the following in your terminal:
+## Writing a post
+
+Quickest way — scaffold one (creates the file with front matter and adds a
+pagination page if needed):
 
 ```bash
- Auto-regeneration: enabled for '/home/kelsos/development/repos/rotki/rotkicom.github.io'
-    Server address: http://127.0.0.1:4000/
-  Server running... press ctrl-c to stop.
+pnpm new "My post title"
 ```
 
-If you open your browser in the specified `Server Address` you should now be able to preview all the changes locally.
+Or add a Markdown file to `posts/` named `YYYY-MM-DD-slug.md` with front matter:
+
+```yaml
+---
+date: 2026-01-31
+pageType: post
+title: My post title
+description: One-line summary used for meta/OG/feed.
+tags: [rotki]
+keywords: [rotki, ...]
+---
+```
+
+The URL is derived from the filename as `/YYYY/MM/DD/slug/` (matching the old
+Jekyll permalinks). The home page shows the three newest posts in full and
+paginates at `/page2/`, `/page3/`, … — add an empty `pageN.md`
+(`pageType: posts`, `page: N`) when a new page is needed (every 3 posts).
+
+## Deploy
+
+Pushing to `master` runs `.github/workflows/deploy.yml`, which builds the site
+and publishes `.vitepress/dist` to GitHub Pages. The repo's
+**Settings → Pages → Source** must be set to **GitHub Actions**.

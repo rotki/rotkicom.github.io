@@ -1,0 +1,32 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":dependencyDashboard",
+    ":dependencyDashboardApproval",
+    "helpers:pinGitHubActionDigests",
+  ],
+  // Mirror the install-time 7-day cooldown (pnpm minimumReleaseAge) so Renovate
+  // never proposes a release younger than one week.
+  "minimumReleaseAge": "7 days",
+  "packageRules": [
+    {
+      "groupName": "Node.js",
+      "matchPackageNames": ["@types/node", "node"],
+      "allowedVersions": "/^(24)\\./",
+    },
+    {
+      "groupName": "tailwindcss",
+      "matchPackageNames": ["tailwindcss", "@tailwindcss/vite"],
+      "allowedVersions": "/^(4)\\./",
+    },
+    {
+      "groupName": "vitepress",
+      "matchPackageNames": ["vitepress"],
+    },
+    {
+      "groupName": "vue monorepo",
+      "matchPackageNames": ["vue", "vue-tsc", "vue-component-meta"],
+    },
+  ],
+}
